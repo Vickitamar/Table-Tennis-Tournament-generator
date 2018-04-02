@@ -8,15 +8,19 @@ header {
 	height: 600px;
 }
 
-.teams {
-	grid-area: 4/1/5/3;
 
-}
 
 h1 {
 	text-align: center;
 	font-size: 50px;
-	padding-top: 200px;
+	margin-top: 300px;
+	
+}
+
+h2 {
+	text-align: center;
+	font-size: 50px;
+
 }
 
 .input {
@@ -33,6 +37,25 @@ input {
 	height: 30px;
 }
 
+#randomButton {
+	grid-area: 3/2/4/3;
+	height: 60px;
+	width: 200px;
+	justify-self: start;
+	margin-top: 100px;
+
+}
+
 #list {
 	grid-area: 3/1/4/2;
+}
+
+.teamone {
+	grid-area: 4/1/5/2;
+	text-align: center;
+}
+
+.teamtwo {
+	grid-area: 4/2/5/3;
+	text-align: center;
 }

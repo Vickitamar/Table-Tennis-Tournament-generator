@@ -5,8 +5,25 @@ header {
   background-position: center;
   background-repeat: no-repeat; }
 
+#list {
+  border: solid grey 1px;
+  margin-top: 75px;
+  margin-left: 150px;
+  padding: 50px;
+  height: 300px;
+  width: 200px; }
+
 li {
   list-style-type: none; }
+
+p {
+  border: solid grey 1px;
+  padding: 10px;
+  height: 30px;
+  width: 60px; }
+
+li {
+  font-size: 20px; }
 
 body {
   display: grid;
@@ -16,13 +33,14 @@ header {
   grid-area: 1 / 1 / 3 / 3;
   height: 600px; }
 
-.teams {
-  grid-area: 4/1/5/3; }
-
 h1 {
   text-align: center;
   font-size: 50px;
-  padding-top: 200px; }
+  margin-top: 300px; }
+
+h2 {
+  text-align: center;
+  font-size: 50px; }
 
 .input {
   text-align: center; }
@@ -34,7 +52,22 @@ input {
 #button {
   height: 30px; }
 
+#randomButton {
+  grid-area: 3/2/4/3;
+  height: 60px;
+  width: 200px;
+  justify-self: start;
+  margin-top: 100px; }
+
 #list {
   grid-area: 3/1/4/2; }
+
+.teamone {
+  grid-area: 4/1/5/2;
+  text-align: center; }
+
+.teamtwo {
+  grid-area: 4/2/5/3;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

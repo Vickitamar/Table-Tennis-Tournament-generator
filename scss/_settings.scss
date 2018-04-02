@@ -7,6 +7,22 @@ header {
 	background-repeat: no-repeat;
 }
 
+#list {
+	border: solid grey 1px;
+	margin-top: 75px;
+	margin-left: 150px;
+	padding: 50px;
+	height: 300px;
+	width: 200px;
+}
+
 li {
 	list-style-type: none;
-}	
+}
+
+p {
+	border: solid grey 1px;
+	padding: 10px;
+	height: 30px;
+	width: 60px;
+	}

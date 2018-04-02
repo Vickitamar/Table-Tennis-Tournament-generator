@@ -8,8 +8,10 @@
 	let button = document.getElementById("button");
 	let body = document.getElementById("body");
 	let randomButton = document.getElementById("randomButton");
-	let teamone = document.getElementById("teamone");
-	let teamtwo = document.getElementById("teamtwo");
+	let teamoneA = document.getElementById("teamoneA");
+	let teamoneB = document.getElementById("teamoneB")
+	let teamtwoA = document.getElementById("teamtwoA");
+	let teamtwoB = document.getElementById("teamtwoB")
 	
 
 	///////////// creating array of list of names ///////////////////////////
@@ -50,10 +52,14 @@
 
 		teamA = history.slice(0, teamSize);
 		teamB = history.slice(teamSize, history.length);
+		console.log(teamA);
+		console.log(teamB);
 
 		
-		teamone.textContent = teamA;
-		teamtwo.textContent = teamB;
+		teamoneA.textContent = teamA[0];
+		teamoneB.textContent = teamA[1];
+		teamtwoA.textContent = teamB[0];
+		teamtwoB.textContent = teamB[1];
 	});
 
 })();

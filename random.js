@@ -19,7 +19,7 @@
 
         let show = list[Math.floor(Math.random() * list.length)];
 
-        console.log(list);
+      
 
 });
 
