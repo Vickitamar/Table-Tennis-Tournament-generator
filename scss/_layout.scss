@@ -9,6 +9,16 @@ header {
 }
 
 
+li, span {
+	width: 49px;
+	float: left;
+}
+
+span {
+	padding-left: 200px;
+}
+
+
 
 input {
 	height: 30px;
@@ -21,6 +31,7 @@ input {
 
 .instructions {
 	grid-area: 2/1/3/3;
+	text-align: center;
 }
 
 #randomButton {
