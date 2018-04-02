@@ -6,7 +6,10 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="body">
-	<header>
+	<header id="header">
+		<video playsinline autoplay muted loop poster="secondVideocropped" id="bgvid">>
+		<source src="secondVideocropped.mp4" type="video/mp4">
+		</video>
 		<h1>Create your team!</h1>
 		<h2>Input players names</h2>
 		
@@ -16,7 +19,9 @@
 			</div>
 	</header>
 		
-
+	<div class="instructions">
+		<p>Add your team mates names to the team list via the box above, and then hit the randomise button for them to be split in to teams!</p>
+	</div>	
 	<ul id="list">
 			
 	</ul>
@@ -29,7 +34,7 @@
 		<div class="teamone">
 			<h3>Team one</h3>
 			<p id="teamoneA"></p>
-			<p id="teamoneB"></p>
+			<p id="teamoneB" class="b"></p>
 				
 			
 		</div>

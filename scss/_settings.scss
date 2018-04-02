@@ -1,11 +1,11 @@
 
 
-header {
-	background-image: url(../images/pingpong.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+// header {
+// 	background-image: url(../images/pingpong.jpg);
+// 	background-size: cover;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// }
 
 #list {
 	border: solid grey 1px;
@@ -20,9 +20,49 @@ li {
 	list-style-type: none;
 }
 
-p {
+.teamone p, .teamtwo p {
 	border: solid grey 1px;
 	padding: 10px;
 	height: 30px;
 	width: 60px;
 	}
+
+#teamtwoA, #teamtwoB, #teamoneA, #teamoneB {
+	margin-right: 70px;
+}
+header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    position: inherit;
+    min-width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+h1, h2, .input {
+    position: absolute;
+    top: 200px;
+    left: 750px;
+    text-align: center;
+    font-size: 50px;
+    z-index: 9999;
+    color: black;
+    transform: translate(-50%,-50%);
+    margin-top: 30px;
+}
+
+h2 {
+	margin-top: 125px;
+
+}
+
+.input {
+	margin-top: 170px;
+}
+		
