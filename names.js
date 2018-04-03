@@ -17,6 +17,7 @@
 	///////////// creating array of list of names ///////////////////////////
 
 	button.addEventListener("click", () => {
+		randomButton.disabled = true;
 		if(input.value) {
 			items.push(input.value)
 			history.push(input.value)
@@ -37,7 +38,19 @@
 		list.appendChild(itemsFragment);
 
 		items = [];
+
+		if (history.length === 4) {
+			button.disabled = true;
+			randomButton.disabled = false;
+		}
+		console.log(history);
 	});
+
+	////////////////////// disable/enable buttons /////////////////////
+	//if there are four people in the item array then disable the submit button
+	//if there are less than four people in the list(or history array) then disable the random button
+	
+	
 
 	///////////////////// random teams ////////////////////////////////
 
@@ -56,14 +69,33 @@
 
 		teamA = history.slice(0, teamSize);
 		teamB = history.slice(teamSize, history.length);
-		console.log(teamA);
-		console.log(teamB);
+		
 
 		
 		teamoneA.textContent = teamA[0];
 		teamoneB.textContent = teamA[1];
 		teamtwoA.textContent = teamB[0];
 		teamtwoB.textContent = teamB[1];
+
+		history = [];
 	});
+
+	///////////////// reset button ////////////////////////////////////////
+	resetButton.addEventListener("click", () => {
+		list.innerHTML = "";
+		teamoneA.innerHTML = "";
+		teamoneB.innerHTML = "";
+		teamtwoA.innerHTML = "";
+		teamtwoB.innerHTML = "";
+		button.disabled = false;
+		randomButton.disabled = true;
+		history = [];
+	});	
+
+
+
+
+
+
 
 })();
