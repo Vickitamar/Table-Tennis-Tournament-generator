@@ -46,23 +46,26 @@ h1 {
 
 .input {
 	margin-top: 230px;
+
 }
 
 
 ////// list of names /////////
+
 #list {
-    border: 1px solid #f4f3f2;
-    
-    margin-top: 75px;
-    margin-left: 250px;
-    padding: 50px;
-    height: 150px;
-    width: 200px;
+    margin-top: 180px;
+    margin-left: 320px;
+    margin-bottom: 250px;
 }
 
 li {
     list-style-type: none;
-    
+
+}
+
+input {
+    border-radius: 5%;
+    border: solid #edf0f7 2px;
 }
 
 footer {
@@ -86,6 +89,14 @@ footer {
 }
 
 ///// BUTTONS /////
+
+#button {
+    border-radius: 5%;
+    font-size: 10px;
+    width: 80px;
+    height: 35px;
+    
+}
 #randomButton {
     margin-top: 100px;
     background-color: $blue;
