@@ -70,13 +70,18 @@ footer {
   margin-top: 100px;
   background-color: #4074ce;
   color: white;
-  border-radius: 10%; }
+  border-radius: 10%;
+  height: 60px;
+  width: 200px; }
 
 #resetButton {
   margin-top: 200px;
+  margin-left: 100px;
   background-color: #4074ce;
   color: white;
-  border-radius: 10%; }
+  border-radius: 10%;
+  height: 60px;
+  width: 200px; }
 
 li {
   font-size: 20px; }
@@ -135,16 +140,9 @@ footer {
   grid-area: 2/1/3/3;
   text-align: center; }
 
-#randomButton {
+.rbuttons {
   grid-area: 2/2/3/3;
-  height: 60px;
-  width: 200px;
-  justify-self: start; }
-
-#resetButton {
-  grid-area: 2/2/3/3;
-  height: 60px;
-  width: 200px; }
+  align-items: start; }
 
 .bat {
   grid-area: 2/1/3/2; }

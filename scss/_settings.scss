@@ -95,19 +95,25 @@ footer {
     font-size: 10px;
     width: 80px;
     height: 35px;
-    
+
 }
 #randomButton {
     margin-top: 100px;
     background-color: $blue;
     color: white;
     border-radius: 10%;
+    height: 60px;
+    width: 200px;
+
 }
 
 #resetButton {
     margin-top: 200px;
+    margin-left: 100px;
     background-color: $blue;
     color: white;
     border-radius: 10%;
+    height: 60px;
+    width: 200px;
 }
 		
