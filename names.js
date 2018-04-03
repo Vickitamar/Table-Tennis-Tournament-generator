@@ -9,9 +9,17 @@
 	let body = document.getElementById("body");
 	let randomButton = document.getElementById("randomButton");
 	let teamoneA = document.getElementById("teamoneA");
-	let teamoneB = document.getElementById("teamoneB")
+	let teamoneB = document.getElementById("teamoneB");
 	let teamtwoA = document.getElementById("teamtwoA");
-	let teamtwoB = document.getElementById("teamtwoB")
+	let teamtwoB = document.getElementById("teamtwoB");
+	let diagram = document.getElementById("diagram");
+
+
+	diagram.style.visibility = "hidden";
+	teamoneA.style.visibility = "hidden";
+	teamoneB.style.visibility = "hidden";
+	teamtwoA.style.visibility = "hidden";
+	teamtwoB.style.visibility = "hidden";
 	
 
 	///////////// creating array of list of names ///////////////////////////
@@ -40,13 +48,9 @@
 			button.disabled = true;
 			randomButton.disabled = false;
 		}
-		console.log(history);
+		
 	});
 
-	////////////////////// disable/enable buttons /////////////////////
-	//if there are four people in the item array then disable the submit button
-	//if there are less than four people in the list(or history array) then disable the random button
-	
 	
 
 	///////////////////// random teams ////////////////////////////////
@@ -56,6 +60,12 @@
 		let teamSize = history.length / 2;
 		let teamA = [];
 		let teamB = [];
+
+		diagram.style.visibility = "visible";
+		teamoneA.style.visibility = "visible";
+		teamoneB.style.visibility = "visible";
+		teamtwoA.style.visibility = "visible";
+		teamtwoB.style.visibility = "visible";
 
 		for (let i = history.length - 1; i > 0; i -= 1) {
 		    let j = Math.floor(Math.random() * (i + 1));
@@ -75,9 +85,11 @@
 		teamtwoB.textContent = teamB[1];
 
 		history = [];
+		randomButton.disabled = true;
 	});
 
 	///////////////// reset button ////////////////////////////////////////
+
 	resetButton.addEventListener("click", () => {
 		list.innerHTML = "";
 		teamoneA.innerHTML = "";
@@ -86,8 +98,15 @@
 		teamtwoB.innerHTML = "";
 		button.disabled = false;
 		randomButton.disabled = true;
+		diagram.style.visibility = "hidden";
+		teamoneA.style.visibility = "hidden";
+		teamoneB.style.visibility = "hidden";
+		teamtwoA.style.visibility = "hidden";
+		teamtwoB.style.visibility = "hidden";
 		history = [];
 	});	
+
+	/////////////// show hide diagram ///////////////////////////////////////
 
 
 
