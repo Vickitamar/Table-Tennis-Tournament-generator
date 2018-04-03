@@ -1,36 +1,7 @@
 
 
-// header {
-// 	background-image: url(../images/pingpong.jpg);
-// 	background-size: cover;
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// }
 
-#list {
-	border: 1px solid #f4f3f2;
-	box-shadow: 5px 10px 18px #888888;
-	margin-top: 75px;
-	margin-left: 150px;
-	padding: 50px;
-	height: 300px;
-	width: 200px;
-}
 
-li {
-	list-style-type: none;
-}
-
-.teamone p, .teamtwo p {
-	border: solid grey 1px;
-	padding: 10px;
-	height: 30px;
-	width: 60px;
-	}
-
-#teamtwoA, #teamtwoB, #teamoneA, #teamoneB {
-	margin-right: 70px;
-}
 header {
     width: 100%;
     height: auto;
@@ -65,5 +36,51 @@ h2 {
 
 .input {
 	margin-top: 170px;
+}
+
+
+////// list of names /////////
+#list {
+    border: 1px solid #f4f3f2;
+    box-shadow: 5px 10px 18px #888888;
+    margin-top: 75px;
+    margin-left: 150px;
+    padding: 50px;
+    height: 300px;
+    width: 200px;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+footer {
+    margin-top: 500px;
+    text-align: center;
+}
+
+
+////// Team positioning /////
+.teamone p, .teamtwo p {
+    border: solid grey 1px;
+    margin-left: 50px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 30px;
+    width: 80px;
+}
+
+#teamtwoA, #teamtwoB, #teamoneA, #teamoneB {
+    margin-right: 70px;
+}
+
+///// BUTTONS /////
+#randomButton {
+    margin-top: 100px;
+}
+
+#resetButton {
+    margin-top: 200px;
 }
 		

@@ -9,20 +9,17 @@ header {
 }
 
 
-li, span {
-	width: 49px;
-	float: left;
-}
-
-span {
-	padding-left: 200px;
-}
-
-
-
 input {
 	height: 30px;
 	width: 350px;
+}
+
+footer {
+	grid-area: 6/1/7/3;
+}
+
+#diagram {
+	grid-area: 4/1/5/3;
 }
 
 #button {
@@ -39,15 +36,13 @@ input {
 	height: 60px;
 	width: 200px;
 	justify-self: start;
-	margin-top: 100px;
-
+	
 }
 
 #resetButton {
 	grid-area: 2/2/3/3;
 	height: 60px;
 	width: 200px;
-	margin-top: 200px;
 }
 
 #list {

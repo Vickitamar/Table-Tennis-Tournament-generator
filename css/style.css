@@ -1,25 +1,4 @@
 @import url(reset.css);
-#list {
-  border: 1px solid #f4f3f2;
-  box-shadow: 5px 10px 18px #888888;
-  margin-top: 75px;
-  margin-left: 150px;
-  padding: 50px;
-  height: 300px;
-  width: 200px; }
-
-li {
-  list-style-type: none; }
-
-.teamone p, .teamtwo p {
-  border: solid grey 1px;
-  padding: 10px;
-  height: 30px;
-  width: 60px; }
-
-#teamtwoA, #teamtwoB, #teamoneA, #teamoneB {
-  margin-right: 70px; }
-
 header {
   width: 100%;
   height: auto;
@@ -50,6 +29,39 @@ h2 {
 .input {
   margin-top: 170px; }
 
+#list {
+  border: 1px solid #f4f3f2;
+  box-shadow: 5px 10px 18px #888888;
+  margin-top: 75px;
+  margin-left: 150px;
+  padding: 50px;
+  height: 300px;
+  width: 200px; }
+
+li {
+  list-style-type: none; }
+
+footer {
+  margin-top: 500px;
+  text-align: center; }
+
+.teamone p, .teamtwo p {
+  border: solid grey 1px;
+  margin-left: 50px;
+  margin-top: 40px;
+  padding: 10px;
+  height: 30px;
+  width: 80px; }
+
+#teamtwoA, #teamtwoB, #teamoneA, #teamoneB {
+  margin-right: 70px; }
+
+#randomButton {
+  margin-top: 100px; }
+
+#resetButton {
+  margin-top: 200px; }
+
 li {
   font-size: 20px; }
 
@@ -61,16 +73,15 @@ header {
   grid-area: 1 / 1 / 2 / 3;
   height: 600px; }
 
-li, span {
-  width: 49px;
-  float: left; }
-
-span {
-  padding-left: 200px; }
-
 input {
   height: 30px;
   width: 350px; }
+
+footer {
+  grid-area: 6/1/7/3; }
+
+#diagram {
+  grid-area: 4/1/5/3; }
 
 #button {
   height: 30px; }
@@ -83,14 +94,12 @@ input {
   grid-area: 2/2/3/3;
   height: 60px;
   width: 200px;
-  justify-self: start;
-  margin-top: 100px; }
+  justify-self: start; }
 
 #resetButton {
   grid-area: 2/2/3/3;
   height: 60px;
-  width: 200px;
-  margin-top: 200px; }
+  width: 200px; }
 
 #list {
   grid-area: 2/1/3/2; }
@@ -108,5 +117,125 @@ input {
 #teamtwoA, #teamtwoB {
   float: left;
   width: 20%; }
+
+#diagram {
+  position: relative; }
+
+.l1 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 130px; }
+
+.l2 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 425px; }
+
+.l3 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 840px; }
+
+.l4 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 1130px; }
+
+.l5 {
+  position: absolute;
+  width: 299px;
+  height: 4px;
+  background-color: black;
+  left: 130px;
+  top: 40px; }
+
+.l6 {
+  position: absolute;
+  width: 294px;
+  height: 4px;
+  background-color: black;
+  left: 840px;
+  top: 40px; }
+
+.l7 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 275px;
+  top: 40px; }
+
+.l8 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 987px;
+  top: 40px; }
+
+.b1 {
+  position: absolute;
+  left: 200px;
+  top: 80px;
+  height: 40px;
+  width: 160px;
+  border: solid grey 1px; }
+
+.b2 {
+  position: absolute;
+  left: 900px;
+  top: 80px;
+  height: 40px;
+  width: 160px;
+  border: solid grey 1px; }
+
+.l9 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 275px;
+  top: 122px; }
+
+.l10 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 987px;
+  top: 122px; }
+
+.l11 {
+  position: absolute;
+  width: 716px;
+  height: 4px;
+  background-color: black;
+  left: 275px;
+  top: 162px; }
+
+.l12 {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  left: 633px;
+  top: 166px; }
+
+.b3 {
+  position: absolute;
+  left: 475px;
+  top: 205px;
+  height: 80px;
+  width: 320px;
+  border: solid grey 1px;
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

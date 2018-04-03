@@ -29,10 +29,7 @@
 		let li = document.createElement("li");
 		li.textContent = el;
 		itemsFragment.appendChild(li);
-		let span = document.createElement("span");
-		let newContent = document.createTextNode("X");
-		span.appendChild(newContent);
-		itemsFragment.appendChild(span);
+		
 	});
 		
 		list.appendChild(itemsFragment);
