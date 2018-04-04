@@ -8,7 +8,7 @@ $lightOrange: #f7f3dc;
 
 
 header {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -16,7 +16,8 @@ header {
 
 video {
     position: inherit;
-    min-width: 100%;
+    max-width: 100%;
+    height: auto;
     overflow: hidden;
     z-index: -1;
     filter: grayscale(100%) opacity(50%);
