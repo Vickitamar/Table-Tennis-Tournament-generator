@@ -308,7 +308,6 @@ footer {
   body {
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: #f2e987;
     max-width: 100%; }
 
   header {
@@ -492,6 +491,6 @@ footer {
     top: 190px;
     height: 40px;
     width: 130px;
-    border: solid red 1px; } }
+    border: solid black 1px; } }
 
 /*# sourceMappingURL=style.css.map */
