@@ -135,6 +135,7 @@ footer {
   grid-area: 6/1/7/3; }
 
 #diagram {
+  max-width: 100%;
   grid-area: 4/1/5/3; }
 
 .instructions {
@@ -316,13 +317,29 @@ footer {
     position: relative;
     margin: 0px; }
 
-  video {
-    position: inherit; }
-
-  h1, h2 {
+  h1 {
     grid-area: 1/1/3/3;
-    font-size: 12px;
-    float: left; }
+    font-size: 30px;
+    top: 55px;
+    left: 210px;
+    margin-top: 0px;
+    margin-bottom: 10px; }
+
+  h2 {
+    grid-area: 1/1/3/3;
+    font-size: 30px;
+    top: 100px;
+    left: 210px;
+    margin: 0px; }
+
+  .input {
+    grid-area: 1/1/3/3;
+    top: 120px;
+    left: 210px;
+    margin-top: 200px; }
+
+  #button {
+    margin: 20px; }
 
   .instructions {
     grid-area: 2/1/3/3;
@@ -355,6 +372,126 @@ footer {
     width: 100px;
     margin-top: 60px;
     margin-bottom: 0px;
-    margin-left: 150px; } }
+    margin-left: 150px; }
+
+  .teamone {
+    grid-area: 4/1/5/2; }
+
+  .teamtwo {
+    grid-area: 5/1/6/2;
+    margin: 0px; }
+
+  #diagram {
+    position: relative; }
+
+  .l1 {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    left: 112px;
+    top: 65px; }
+
+  .l2 {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    left: 112px;
+    top: 175px; }
+
+  .l3 {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    left: 112px;
+    top: 280px; }
+
+  .l4 {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    left: 112px;
+    top: 385px; }
+
+  .l5 {
+    position: absolute;
+    width: 4px;
+    height: 115px;
+    background-color: black;
+    left: 152px;
+    top: 65px; }
+
+  .l6 {
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background-color: black;
+    left: 152px;
+    top: 280px; }
+
+  .l7 {
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    background-color: black;
+    left: 152px;
+    top: 115px; }
+
+  .l8 {
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    background-color: black;
+    left: 152px;
+    top: 340px; }
+
+  .b1 {
+    position: absolute;
+    left: 180px;
+    top: 95px;
+    height: 40px;
+    width: 130px;
+    border: solid black 1px; }
+
+  .b2 {
+    position: absolute;
+    left: 180px;
+    top: 315px;
+    height: 40px;
+    width: 130px;
+    border: solid black 1px; }
+
+  .l9 {
+    position: absolute;
+    width: 4px;
+    height: 180px;
+    background-color: black;
+    left: 280px;
+    top: 135px; }
+
+  .l10 {
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    background-color: black;
+    left: 284px;
+    top: 210px; }
+
+  .l11 {
+    display: none; }
+
+  .l12 {
+    display: none; }
+
+  .b3 {
+    position: absolute;
+    left: 332px;
+    top: 190px;
+    height: 40px;
+    width: 130px;
+    border: solid red 1px; } }
 
 /*# sourceMappingURL=style.css.map */
