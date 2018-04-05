@@ -72,7 +72,7 @@
 	top: 40px;
 }
 
-.b1 {
+#b1box {
 	position: absolute;
 	
 	left: 200px;
@@ -82,7 +82,7 @@
     border: solid grey 1px;
 }
 
-.b2 {
+#b2box {
 	position: absolute;
 	left: 900px;
 	top: 80px;
@@ -127,7 +127,7 @@
 	top: 166px;
 }
 
-.b3 {
+#b3box {
 	position: absolute;
 	left: 475px;
 	top: 205px;
@@ -136,6 +136,24 @@
     border: solid grey 1px;
     margin-bottom: 20px;
 }
+
+
+
+#b1 {
+	text-align: center;
+}
+
+#b2 {
+	text-align: center;
+}
+
+
+#b3 {
+	padding-left: 80px;
+	margin: 0px;
+}
+
+
 
 
 

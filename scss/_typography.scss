@@ -3,6 +3,7 @@
 
 li {
 	font-size: 20px;
+	line-height: 1.6;
 }
 
 h1, h2 {
@@ -23,7 +24,16 @@ input {
 
 }
 
+footer p {
+	font-family: 'Dosis', sans-serif;
+}
+
 .instructions {
+	font-family: 'Dosis', sans-serif;
+	font-size: 30px;
+}
+
+#clickInstructions {
 	font-family: 'Dosis', sans-serif;
 	font-size: 30px;
 }
@@ -44,4 +54,9 @@ input {
 	font-family: 'Dosis', sans-serif;
     font-size: 20px;
     font-style: italic;
+}
+
+#b3 {
+	font-family: 'Cookie', cursive;
+	font-size: 50px;
 }

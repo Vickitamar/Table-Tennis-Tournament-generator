@@ -27,8 +27,8 @@ video {
 h1, h2, .input {
 
     position: absolute;
-    top: 200px;
-    left: 750px;
+    top: 25%;
+    left: 50%;
     text-align: center;
     
     z-index: 9999;
@@ -76,6 +76,8 @@ input {
 footer {
     margin-top: 500px;
     text-align: center;
+    color: white;
+    background-color: $blue;
 }
 
 
@@ -100,6 +102,8 @@ footer {
     font-size: 10px;
     width: 80px;
     height: 35px;
+    background-color: $blue;
+    color: white;
 
 }
 #randomButton {

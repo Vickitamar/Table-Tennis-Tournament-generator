@@ -15,7 +15,12 @@
 	let diagram = document.getElementById("diagram");
 	let paragraph = document.getElementById("paragraph");
 	let b1 = document.getElementById("b1");
+	let b1box = document.getElementById("b1box");
+	let b2box = document.getElementById("b2box");
 	let b2 = document.getElementById("b2");
+	let b3box = document.getElementById("b3box");
+	let b3 = document.getElementById("b3");
+	let instructions = document.getElementById("clickInstructions");
 
 
 	diagram.style.visibility = "hidden";
@@ -23,6 +28,8 @@
 	teamoneB.style.visibility = "hidden";
 	teamtwoA.style.visibility = "hidden";
 	teamtwoB.style.visibility = "hidden";
+	instructions.style.visibility = "hidden";
+	
 
 	///////////// make sure only characters are entered//////////////////////
 
@@ -69,6 +76,7 @@
 
 		if (history.length === 4) {
 			button.disabled = true;
+			button.style.backgroundColor = "#a6c4f4";
 			randomButton.disabled = false;
 			randomButton.style.backgroundColor = "#4074ce";
 		}
@@ -90,6 +98,7 @@
 		teamoneB.style.visibility = "visible";
 		teamtwoA.style.visibility = "visible";
 		teamtwoB.style.visibility = "visible";
+		instructions.style.visibility = "visible";
 
 		for (let i = history.length - 1; i > 0; i -= 1) {
 		    let j = Math.floor(Math.random() * (i + 1));
@@ -112,6 +121,7 @@
 		randomButton.disabled = true;
 
 		teamoneA.addEventListener("click", () => {
+			console.log("worked");
 			teamoneA.style.border = "3px solid red";
 			teamoneB.style.border = "1px solid black";
 			b1.textContent = teamA[0];
@@ -134,6 +144,23 @@
 			teamtwoA.style.border = "1px solid black";
 			b2.textContent = teamB[1];
 		})
+
+		b1.addEventListener("click", () => {
+			b1box.style.border = "3px solid red";
+			teamoneA.style.border = "1px solid black";
+			teamoneB.style.border = "1px solid black";
+			b2box.style.border = "0.5px solid black";
+			
+
+		})
+
+		b2.addEventListener("click", () => {
+			b2box.style.border = "3px solid red";
+			teamtwoA.style.border = "1px solid black";
+			teamtwoB.style.border = "1px solid black";
+			b1box.style.border = "0.5px solid black";
+
+		})
 	});
 
 	///////////////// reset button ////////////////////////////////////////
@@ -145,34 +172,17 @@
 		teamtwoA.innerHTML = "";
 		teamtwoB.innerHTML = "";
 		button.disabled = false;
+		button.style.backgroundColor = "#4074ce";
 		randomButton.disabled = true;
 		diagram.style.visibility = "hidden";
 		teamoneA.style.visibility = "hidden";
 		teamoneB.style.visibility = "hidden";
 		teamtwoA.style.visibility = "hidden";
 		teamtwoB.style.visibility = "hidden";
+		instructions.style.visibility = "hidden";
 		history = [];
 	});	
 
-	/////////////// selecting winners ///////////////////////////////////////
-
-	//if teamoneA clicked change its border and name placed in next box.
-
-	// teamoneA.addEventListener("click", () => {
-	// 	teamoneA.style.border = "3px solid red";
-	// 	teamoneB.style.border = "1px solid black";
-	// 	b1.textContent = teamA[0];
-	// })
-
-	// teamoneB.addEventListener("click", () => {
-	// 	teamoneB.style.border = "3px solid red";
-	// 	teamoneA.style.border = "1px solid black";
-	// })
-
-
-
-
-
-
+	
 
 })();
