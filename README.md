@@ -19,8 +19,8 @@ I decided to use CSS Grid for my layout as I feel most comfortable using it, and
 I approached this project by first writing the logic for collecting the data from the user and then randomising it into pairings. I then spent the rest of the time styling it in CSS, and trying to make it mobile responisve.
 
 ![screenshot](images/mobilewireframe.jpg)
-![screenshot](images/mobileFirstHalf.jpg)
-![screenshot](images/mobileSecondHalf.jpg)
+![screenshot](images/mobilefirsthalf.png)
+![screenshot](images/mobilesecondhalf.png)
 
 If I had more time I would finish making it mobile responsive. I did spend a lot of time on this but I think due to my use of CSS grid and how I positioned some elements I could not get it to work in time! I would also like to add in more logic so that I can put some form validation on (for example letters only in team names) and also have it so that the user can add in more than four players. I also wanted to be able to click on the second round box and display the winners name in the final box, but unfortuantely I could not get this working in time.
 
