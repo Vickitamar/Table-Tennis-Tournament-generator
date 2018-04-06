@@ -1,58 +1,50 @@
-body {
+
+
+.wrapper {
+	width: 100%; 
+	//margin: auto;
 	display: grid;
 	grid-template-columns: 50% 50%;
-	max-width: 100%;
+	margin: 0px;
 }
 
 header {
 	grid-area: 1 / 1 / 2 / 3;
-	height: 600px;
-}
-
-
-input {
-	height: 30px;
-	width: 350px;
-}
-
-
-
-
-
-footer {
-	grid-area: 6/1/7/3;
-}
-
-#diagram {
+	height: 100%;
 	max-width: 100%;
-	grid-area: 4/1/5/3;
 }
+
 
 
 
 .instructions {
 	grid-area: 2/1/3/3;
-	text-align: center;
+	
 }
-
 
 .rbuttons {
 	grid-area: 2/2/3/3;
-	align-items: start;
+	
 }
 
-#clickInstructions {
-	grid-area: 2/2/3/3;
-	align-self: end;
-}
 
 
 .bat {
 	grid-area: 2/1/3/2;
 }
 
+
+
 #list {
 	grid-area: 2/1/3/2;
+   
+}
+
+
+
+#clickInstructions {
+	grid-area: 2/2/3/3;
+	
 }
 
 .teamone {
@@ -65,15 +57,14 @@ footer {
 	
 }
 
-#teamoneA, #teamoneB {
-	float: left;
-	width: 20%;
+#diagram {
+	grid-area: 4/1/5/3;
 }
 
-#teamtwoA, #teamtwoB {
-	float: left;
-	width: 20%;
+footer {
+	grid-area: 6/1/7/3;
 }
+
 
 
 

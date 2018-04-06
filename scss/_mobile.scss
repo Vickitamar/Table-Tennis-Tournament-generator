@@ -1,115 +1,70 @@
 @media only screen and (min-device-width: 375px) 
   and (max-device-width: 667px) {
+  	.instructions {
+  		font-size: 12px;
+  		margin: 1%;
+  	}
 
-	body {
-		display: grid;
-		grid-template-columns: 50% 50%;
-			
-		
-		
-	}
+  	footer {
+  		margin-top: 0px;
+  	}
 
-	header {
-		grid-area: 1 / 1 / 2 / 3;
-		height: 600px;
-		position: relative;
-		margin: 0px;
-		
-	}
-
-
-	h1 {
-		grid-area: 1/1/3/3;
-		font-size: 50px;
-		margin-top: 10px;
-    	margin-bottom: 10px;
-		
-	}
-
-	h2 {
-		grid-area: 1/1/3/3;
-		font-size: 40px;
-		margin-top: 50px;
-		
-	}
-
-	input {
-		width: 250px;
-	}
-
-	.input {
-		grid-area: 1/1/3/3;
-		top: 120px;
-		left: 190px;
-		
-		margin-top: 200px;
-		margin-left: 250px;
-	}
-
-	#button {
-		margin: 20px;
-	}
-
-	.instructions {
-		grid-area: 2/1/3/3;
-		font-size: 12px;
-		margin: 0px;
-	}
-
-	#clickInstructions {
-		grid-area: 3/1/4/3;
-		font-size: 12px;
-		margin-top: 60px;
-		text-align: center;
-	}
-
-	.rbuttons {
-		grid-area: 3/1/4/3;
-		position: relative;
-		
-
-	}
-
-	#randomButton {
-		
-		//position: absolute;
-		height: 30px;
-	    width: 100px;
+  	#randomButton {
+		height: 20%;
+	    width: 30%;
 	    margin-top: 20px;
-	    margin-right: 10px;
-	    margin-left: 50px;
-
-	    
+	    margin-right: 10%;
+	    margin-left: 10%;
 	}
 
 	#resetButton {
-		
-		//position: absolute;
-		height: 30px;
-    	width: 75px;
+		height: 20%;
+    	width: 30%;
     	margin-top: 20px;
-
-    	
+    	margin-left: 0;
+    }
+    
+    .rbuttons {
+		grid-area: 2/1/3/3;
+		align-items: start;
+		position: relative;
+		margin-top: 50%;
 	}
 
-	.bat, .handle {
-		 display: none;
+	#button {
+	    border-radius: 5%;
+	    font-size: 10px;
+	    width: 30%;
+	    height: 5%;
+	    background-color: $blue;
+	    color: white;
+	}
+
+	.bat {
+		display: none;
 	}
 
 	#list {
 		grid-area: 2/1/3/3;
-		border: solid black 2px;
-		height: 150px;
-		width: 100px;
-		margin-top: 60px;
+		margin-top: 30%;
+		margin-left: 30%;
+		width: 25%;
+		height: auto;
 		margin-bottom: 0px;
-		margin-left: 120px;
-		
 	}
-////////////////////////the diagram /////////////
+
+	#clickInstructions {
+		grid-area: 2/1/3/3;
+		font-size: 15px;
+  		margin-left: 5%;
+  		margin-right: 5%;
+  		margin-top: 80%;
+	}
 
 	.teamone {
 		grid-area: 4/1/5/2;
+		margin-left: 0px;
+
 	
 	}
 
@@ -119,45 +74,62 @@
 	
 	}
 
-	
+	h1 {
+		font-size: 20px;
+		margin-bottom: 10px;
+		top: 20%;
+    	left: 50%;
+	}
 
+	h2 {
+		font-size: 15px;
+		top: 50%;
+    	left: 50%;
+	}
+
+	input {
+		height: 1%;
+		width: 50%;
+	}
+
+	li {
+		font-size: 15px;
+	}
 	#diagram {
 		position: relative;
 	
 	}
-	.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 {
+
+	.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8  {
 		display: none;
-		
 	}
 
-	
+
 
 	#b1box {
 		position: absolute;
-		left: 80px;
-		top: 97px;
+		left: 140px;
+		top: 120px;
 		height: 40px;
-	    width: 130px;
-	    border: solid black 1px;
+	    width: 160px;
+	    border: solid grey 1px;
 	}
 
 	#b2box {
 		position: absolute;
-		left: 80px;
-		top: 315px;
+		left: 140px;
+		top: 380px;
 		height: 40px;
-	    width: 130px;
-	    border: solid black 1px;
+    	width: 160px;
+    	border: solid grey 1px;
 	}
 
 	.l9 {
 		display: none;
-		
 	}
 
 	.l10 {
 		display: none;
-		
 	}
 
 	.l11 {
@@ -171,21 +143,35 @@
 	#b3box {
 		position: absolute;
 		left: 180px;
-		top: 190px;
-		height: 40px;
-	    width: 130px;
-	    border: solid black 1px;		
-		
+		top: 230px;
+		height: 60px;
+	    width: 180px;
+	    border: solid grey 1px;
+	    margin-bottom: 20px;
 	}
+
+
+
+	#b1 {
+		text-align: center;
+	}
+
+	#b2 {
+		text-align: center;
+	}
+
 
 	#b3 {
-		font-size: 18px;
-		padding: 0px;
-		text-align: center;
-		
+		padding-left: 20px;
+		margin: 0px;
 	}
-
 	
+
+
+
+
+
+
 
 
 

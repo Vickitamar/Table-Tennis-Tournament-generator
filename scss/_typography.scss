@@ -1,11 +1,5 @@
 
 
-
-li {
-	font-size: 20px;
-	line-height: 1.6;
-}
-
 h1, h2 {
 	font-family: 'Cookie', cursive;
 }
@@ -24,9 +18,11 @@ input {
 
 }
 
-footer p {
-	font-family: 'Dosis', sans-serif;
+li {
+	font-size: 20px;
+	line-height: 1.6;
 }
+
 
 .instructions {
 	font-family: 'Dosis', sans-serif;
@@ -59,4 +55,12 @@ footer p {
 #b3 {
 	font-family: 'Cookie', cursive;
 	font-size: 50px;
+}
+
+#teamoneA, #teamoneB, #teamtwoA, #teamtwoB, #b1, #b2 {
+	font-family: 'Dosis', sans-serif;
+}
+
+footer p {
+	font-family: 'Dosis', sans-serif;
 }

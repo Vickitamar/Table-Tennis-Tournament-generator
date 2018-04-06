@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title></title>
 	<link href="https://fonts.googleapis.com/css?family=Cookie|Dosis" rel="stylesheet">
 		
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body id="body">
+<body id="body" class="wrapper">
 	<header id="header">
 		<video playsinline autoplay muted loop poster="secondVideocropped" id="bgvid">>
 		<source src="secondVideocropped.mp4" type="video/mp4">
@@ -14,27 +15,26 @@
 		<h1>Create your team!</h1>
 		<h2>Input players names</h2>
 		
-			<div class="input">
-				<input type="text" name="Name" id="intext" />
-				<button id="button">Submit</button>
-				<h4 id="paragraph"></h4>
-			</div>
+		<div class="input">
+			<input type="text" name="Name" id="intext" />
+			<button id="button">Submit</button>
+			<h4 id="paragraph"></h4>
+		</div>
 	</header>
 	
 		
-		<div class="instructions">
-			<p>Add four names to the team list via the box above, and then hit the randomise button for them to be split into two teams!</p>
-		</div>
-		<div class="bat">
-			<div class="handle"></div>
-		</div>
+	<div class="instructions">
+		<p>Add four names to the team list via the box above, and then hit the randomise button for them to be split into two teams!</p>
+	</div>
+
+	<div class="bat">
+		<div class="handle"></div>
+	</div>
 				
-			<ul id="list">
+	<ul id="list"></ul>
 			
 				
-			</ul>
 			
-		
 	<div class="rbuttons">	
 		<button id="randomButton">Randomise</button>
 		<button id="resetButton">Reset</button>
@@ -61,25 +61,23 @@
 
 	</div>
 	
-		<div id="diagram">
-			<div class="l1"></div>
-			<div class="l2"></div>
-			<div class="l3"></div>
-			<div class="l4"></div>
-			<div class="l5"></div>
-			<div class="l6"></div>
-			<div class="l7"></div>
-			<div class="l8"></div>
-			<div id="b1box"><p id="b1"></p></div>
-			<div id="b2box"><p id="b2"></p></div>
-			<div class="l9"></div>
-			<div class="l10"></div>
-			<div class="l11"></div>
-			<div class="l12"></div>
-			<div id="b3box"><p id="b3">Winner!</p></div>
-			
-
-		</div>	
+	<div id="diagram">
+		<div class="l1"></div>
+		<div class="l2"></div>
+		<div class="l3"></div>
+		<div class="l4"></div>
+		<div class="l5"></div>
+		<div class="l6"></div>
+		<div class="l7"></div>
+		<div class="l8"></div>
+		<div id="b1box"><p id="b1"></p></div>
+		<div id="b2box"><p id="b2"></p></div>
+		<div class="l9"></div>
+		<div class="l10"></div>
+		<div class="l11"></div>
+		<div class="l12"></div>
+		<div id="b3box"><p id="b3">Winner!</p></div>
+	</div>	
 	
 
 	<footer>
@@ -88,8 +86,8 @@
 
 				
 	
-<script src="names.js"></script>
-<!-- <script src="reset.js"></script> -->
+	<script src="names.js"></script>
+
 
 </body>
 </html>

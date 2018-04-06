@@ -31,19 +31,6 @@
 	instructions.style.visibility = "hidden";
 	
 
-	///////////// make sure only characters are entered//////////////////////
-
-	// button.addEventListener("click", () => {
-	// 	console.log("working");
-	// 	let re = 5;
-		
-		
-	// 	if (input.value === re) {
-	// 		paragraph.textContent = "Please only use letters";
-	// 		console.log(re);
-	// 	}
-
-	// })
 	
 
 	///////////// creating array of list of names ///////////////////////////

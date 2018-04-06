@@ -1,8 +1,5 @@
-@import url(reset.css);
-/*colour*/
 header {
   max-width: 100%;
-  height: auto;
   overflow: hidden;
   position: relative; }
 
@@ -14,7 +11,7 @@ video {
   z-index: -1;
   filter: grayscale(100%) opacity(50%); }
 
-h1, h2, .input {
+h1 {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -25,43 +22,33 @@ h1, h2, .input {
   margin-top: 30px; }
 
 h2 {
-  margin-top: 125px;
-  color: black; }
-
-h1 {
-  color: black; }
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  z-index: 9999;
+  color: black;
+  transform: translate(-50%, -50%); }
 
 .input {
-  margin-top: 230px; }
-
-#list {
-  margin-top: 180px;
-  margin-left: 320px;
-  margin-bottom: 250px; }
-
-li {
-  list-style-type: none; }
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  text-align: center;
+  z-index: 9999;
+  color: black;
+  transform: translate(-50%, -50%);
+  margin-top: 30px; }
 
 input {
-  border-radius: 5%;
-  border: solid #edf0f7 2px; }
-
-footer {
-  margin-top: 500px;
-  text-align: center;
-  color: white;
-  background-color: #4074ce; }
-
-.teamone p, .teamtwo p {
-  border: solid grey 1px;
-  margin-left: 50px;
-  margin-top: 40px;
-  padding: 10px;
   height: 30px;
-  width: 80px; }
+  width: 250px; }
 
-#teamtwoA, #teamtwoB, #teamoneA, #teamoneB {
-  margin-right: 70px; }
+.instructions {
+  text-align: center; }
+
+.rbuttons {
+  align-items: start; }
 
 #button {
   border-radius: 5%;
@@ -88,9 +75,56 @@ footer {
   height: 60px;
   width: 200px; }
 
+.bat {
+  position: relative;
+  border: solid black 3px;
+  border-radius: 45%;
+  transform: rotate(20deg);
+  height: 300px;
+  width: 300px;
+  left: 250px;
+  top: 100px; }
+
+.handle {
+  position: relative;
+  border: solid black 3px;
+  height: 150px;
+  width: 50px;
+  left: 120px;
+  top: 270px; }
+
+#list {
+  margin-top: 25%;
+  margin-left: 45%;
+  margin-bottom: 250px; }
+
 li {
-  font-size: 20px;
-  line-height: 1.6; }
+  list-style-type: none; }
+
+#clickInstructions {
+  align-self: end; }
+
+.teamone p, .teamtwo p {
+  border: solid grey 1px;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 20px;
+  height: 30px;
+  width: 50px; }
+
+#teamoneA, #teamoneB {
+  float: left;
+  width: 30%; }
+
+#teamtwoA, #teamtwoB {
+  float: left;
+  width: 30%; }
+
+footer {
+  margin-top: 500px;
+  text-align: center;
+  color: white;
+  background-color: #4074ce; }
 
 h1, h2 {
   font-family: 'Cookie', cursive; }
@@ -105,8 +139,9 @@ input {
   font-family: 'Dosis', sans-serif;
   font-size: 18px; }
 
-footer p {
-  font-family: 'Dosis', sans-serif; }
+li {
+  font-size: 20px;
+  line-height: 1.6; }
 
 .instructions {
   font-family: 'Dosis', sans-serif;
@@ -135,37 +170,28 @@ footer p {
   font-family: 'Cookie', cursive;
   font-size: 50px; }
 
-body {
+#teamoneA, #teamoneB, #teamtwoA, #teamtwoB, #b1, #b2 {
+  font-family: 'Dosis', sans-serif; }
+
+footer p {
+  font-family: 'Dosis', sans-serif; }
+
+.wrapper {
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  max-width: 100%; }
+  margin: 0px; }
 
 header {
   grid-area: 1 / 1 / 2 / 3;
-  height: 600px; }
-
-input {
-  height: 30px;
-  width: 350px; }
-
-footer {
-  grid-area: 6/1/7/3; }
-
-#diagram {
-  max-width: 100%;
-  grid-area: 4/1/5/3; }
+  height: 100%;
+  max-width: 100%; }
 
 .instructions {
-  grid-area: 2/1/3/3;
-  text-align: center; }
+  grid-area: 2/1/3/3; }
 
 .rbuttons {
-  grid-area: 2/2/3/3;
-  align-items: start; }
-
-#clickInstructions {
-  grid-area: 2/2/3/3;
-  align-self: end; }
+  grid-area: 2/2/3/3; }
 
 .bat {
   grid-area: 2/1/3/2; }
@@ -173,19 +199,20 @@ footer {
 #list {
   grid-area: 2/1/3/2; }
 
+#clickInstructions {
+  grid-area: 2/2/3/3; }
+
 .teamone {
   grid-area: 3/1/4/2; }
 
 .teamtwo {
   grid-area: 3/2/4/3; }
 
-#teamoneA, #teamoneB {
-  float: left;
-  width: 20%; }
+#diagram {
+  grid-area: 4/1/5/3; }
 
-#teamtwoA, #teamtwoB {
-  float: left;
-  width: 20%; }
+footer {
+  grid-area: 6/1/7/3; }
 
 #diagram {
   position: relative; }
@@ -307,114 +334,91 @@ footer {
   border: solid grey 1px;
   margin-bottom: 20px; }
 
-#b1 {
-  text-align: center; }
-
-#b2 {
+#b1, #b2 {
   text-align: center; }
 
 #b3 {
   padding-left: 80px;
   margin: 0px; }
 
-.bat {
-  position: relative;
-  border: solid black 3px;
-  border-radius: 45%;
-  transform: rotate(20deg);
-  height: 300px;
-  width: 300px;
-  left: 250px;
-  top: 100px; }
-
-.handle {
-  position: relative;
-  border: solid black 3px;
-  height: 150px;
-  width: 50px;
-  left: 120px;
-  top: 270px; }
-
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  body {
-    display: grid;
-    grid-template-columns: 50% 50%; }
-
-  header {
-    grid-area: 1 / 1 / 2 / 3;
-    height: 600px;
-    position: relative;
-    margin: 0px; }
-
-  h1 {
-    grid-area: 1/1/3/3;
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-
-  h2 {
-    grid-area: 1/1/3/3;
-    font-size: 40px;
-    margin-top: 50px; }
-
-  input {
-    width: 250px; }
-
-  .input {
-    grid-area: 1/1/3/3;
-    top: 120px;
-    left: 190px;
-    margin-top: 200px;
-    margin-left: 250px; }
-
-  #button {
-    margin: 20px; }
-
   .instructions {
-    grid-area: 2/1/3/3;
     font-size: 12px;
-    margin: 0px; }
+    margin: 1%; }
 
-  #clickInstructions {
-    grid-area: 3/1/4/3;
-    font-size: 12px;
-    margin-top: 60px;
-    text-align: center; }
-
-  .rbuttons {
-    grid-area: 3/1/4/3;
-    position: relative; }
+  footer {
+    margin-top: 0px; }
 
   #randomButton {
-    height: 30px;
-    width: 100px;
+    height: 20%;
+    width: 30%;
     margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 50px; }
+    margin-right: 10%;
+    margin-left: 10%; }
 
   #resetButton {
-    height: 30px;
-    width: 75px;
-    margin-top: 20px; }
+    height: 20%;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 0; }
 
-  .bat, .handle {
+  .rbuttons {
+    grid-area: 2/1/3/3;
+    align-items: start;
+    position: relative;
+    margin-top: 50%; }
+
+  #button {
+    border-radius: 5%;
+    font-size: 10px;
+    width: 30%;
+    height: 5%;
+    background-color: #4074ce;
+    color: white; }
+
+  .bat {
     display: none; }
 
   #list {
     grid-area: 2/1/3/3;
-    border: solid black 2px;
-    height: 150px;
-    width: 100px;
-    margin-top: 60px;
-    margin-bottom: 0px;
-    margin-left: 120px; }
+    margin-top: 30%;
+    margin-left: 30%;
+    width: 25%;
+    height: auto;
+    margin-bottom: 0px; }
+
+  #clickInstructions {
+    grid-area: 2/1/3/3;
+    font-size: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 80%; }
 
   .teamone {
-    grid-area: 4/1/5/2; }
+    grid-area: 4/1/5/2;
+    margin-left: 0px; }
 
   .teamtwo {
     grid-area: 5/1/6/2;
     margin: 0px; }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    top: 20%;
+    left: 50%; }
+
+  h2 {
+    font-size: 15px;
+    top: 50%;
+    left: 50%; }
+
+  input {
+    height: 1%;
+    width: 50%; }
+
+  li {
+    font-size: 15px; }
 
   #diagram {
     position: relative; }
@@ -424,19 +428,19 @@ footer {
 
   #b1box {
     position: absolute;
-    left: 80px;
-    top: 97px;
+    left: 140px;
+    top: 120px;
     height: 40px;
-    width: 130px;
-    border: solid black 1px; }
+    width: 160px;
+    border: solid grey 1px; }
 
   #b2box {
     position: absolute;
-    left: 80px;
-    top: 315px;
+    left: 140px;
+    top: 380px;
     height: 40px;
-    width: 130px;
-    border: solid black 1px; }
+    width: 160px;
+    border: solid grey 1px; }
 
   .l9 {
     display: none; }
@@ -453,14 +457,20 @@ footer {
   #b3box {
     position: absolute;
     left: 180px;
-    top: 190px;
-    height: 40px;
-    width: 130px;
-    border: solid black 1px; }
+    top: 230px;
+    height: 60px;
+    width: 180px;
+    border: solid grey 1px;
+    margin-bottom: 20px; }
+
+  #b1 {
+    text-align: center; }
+
+  #b2 {
+    text-align: center; }
 
   #b3 {
-    font-size: 18px;
-    padding: 0px;
-    text-align: center; } }
+    padding-left: 20px;
+    margin: 0px; } }
 
 /*# sourceMappingURL=style.css.map */
