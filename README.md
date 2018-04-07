@@ -22,7 +22,7 @@ I approached this project by first writing the logic for collecting the data fro
 ![screenshot](images/mobilefirsthalf.png)
 ![screenshot](images/mobilesecondhalf.png)
 
-If I had more time I would finish making it mobile responsive. I did spend a lot of time on this but I think due to my use of CSS grid and how I positioned some elements I could not get it to work in time! I would also like to add in more logic so that I can put some form validation on (for example letters only in team names) and also have it so that the user can add in more than four players. I also wanted to be able to click on the second round box and display the winners name in the final box, but unfortuantely I could not get this working in time.
+If I had more time I would finish making it mobile responsive. I did spend a lot of time on this but I think due to my use of CSS grid and how I positioned some elements I could not get it to work in time!I had it working on the inspect device tool (see screenshots above) but when it came to testing it did not workon an actual device, which was very frustrating. I would also like to add in more logic so that I can put some form validation on (for example letters only in team names, no blank spaces) and also have it so that the user can add in more than four players. I also wanted to be able to click on the second round box and display the winners name in the final box, but unfortuantely I could not get this working in time.
 
 It was great working on this tool, I enjoyed making a plan for the week, pushing my skills and seeing what solutions I came up with!
 
