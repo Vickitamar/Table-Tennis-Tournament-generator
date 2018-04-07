@@ -14,7 +14,7 @@ To begin with I created a wireframe for both full screen and mobile-
 I stayed pretty faithful to the wireframe, I created the diagram/flowchart just by using divs and styling in CSS. I added a paddle which I drew in CSS.
 
 I used SASS to help me compile my CSS as I knew I would have to use a few different CSS files for different components.
-I decided to use CSS Grid for my layout as I feel most comfortable using it, and thought it best suited to the two coloum layout that I wanted. 
+I decided to use CSS Grid for my layout as I feel most comfortable using it, and thought it best suited to the two column layout that I wanted. 
 
 I approached this project by first writing the logic for collecting the data from the user and then randomising it into pairings. I then spent the rest of the time styling it in CSS, and trying to make it mobile responisve.
 
@@ -22,7 +22,7 @@ I approached this project by first writing the logic for collecting the data fro
 ![screenshot](images/mobilefirsthalf.png)
 ![screenshot](images/mobilesecondhalf.png)
 
-If I had more time I would finish making it mobile responsive. I did spend a lot of time on this but I think due to my use of CSS grid and how I positioned some elements I could not get it to work in time!I had it working on the inspect device tool (see screenshots above) but when it came to testing it did not workon an actual device, which was very frustrating. I would also like to add in more logic so that I can put some form validation on (for example letters only in team names, no blank spaces) and also have it so that the user can add in more than four players. I also wanted to be able to click on the second round box and display the winners name in the final box, but unfortuantely I could not get this working in time.
+If I had more time I would finish making it mobile responsive. I did spend a lot of time on this but I think due to my use of CSS grid and how I positioned some elements I could not get it to work in time! I had it working on the inspect device tool (see screenshots above) but when it came to testing it did not work on an actual device, which was very frustrating. I would also like to add in more logic so that I can put some form validation on (for example letters only in team names, no blank spaces) and also have it so that the user can add in more than four players. I also wanted to be able to click on the second round box and display the winners name in the final box, but unfortuantely I could not get this working in time. I would have also liked to have done more testing in different browsers.
 
 It was great working on this tool, I enjoyed making a plan for the week, pushing my skills and seeing what solutions I came up with!
 
